@@ -8,10 +8,10 @@
 #include <arch_helpers.h>
 #include <debug.h>
 #include <console.h>
+#include <marvell_plat_priv.h>
 #include <marvell_pm.h>
 #include <platform_def.h>
 #include <plat_marvell.h>
-#include <plat_private.h>
 #include <string.h>
 
 #define BR_FLAG_SILENT		0x1
@@ -79,7 +79,7 @@ int exec_ble_main(int bootrom_flags)
 		 * This should be done until the BootROM have a native support
 		 * for the system restore flow.
 		 */
-		ble_prepare_exit();
+		marvell_ble_prepare_exit();
 		bootrom_exit();
 	}
 
