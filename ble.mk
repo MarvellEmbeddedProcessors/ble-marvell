@@ -6,7 +6,8 @@
 MV_DDR_PATH		?=	drivers/marvell/mv_ddr
 
 MV_DDR_LIB		= 	$(CURDIR)/$(BUILD_PLAT)/ble/mv_ddr_lib.a
-BLE_LIBS		= 	$(MV_DDR_LIB)
+LIBC_LIB		=	$(CURDIR)/$(BUILD_PLAT)/lib/libc.a
+BLE_LIBS		= 	$(MV_DDR_LIB) $(LIBC_LIB)
 PLAT_MARVELL		=	plat/marvell
 
 BLE_SOURCES		+= 	$(BLE_PATH)/ble_main.c				\
