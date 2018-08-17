@@ -20,7 +20,7 @@ PLAT_INCLUDES		+= 	-I$(MV_DDR_PATH) \
 				-I$(CURDIR)/include/drivers \
 				-I$(CURDIR)/include/lib \
 				-I$(CURDIR)/include/lib/libc \
-				-I$(CURDIR)/include/lib/libc/sys \
+				-I$(CURDIR)/include/lib/libc/aarch64 \
 				-I$(CURDIR)/drivers/marvell
 
 BLE_LINKERFILE		:=	$(BLE_PATH)/ble.ld.S
